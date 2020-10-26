@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <!-- Load d3.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="/Users/meganfletcher/Desktop/codepen/src/style.css" type="text/css" rel="stylesheet" />
+</head>
+<header>
+  <h1>Headline placeholder</h1>
+</header>
+<body>
+  <h2>Which college do you think has the highest proportion of in-person classes?</h2>
+  <form id="main" action=" " method="POST">
+     <select id="drop" name="College" onchange="showChoice('Nursing', this)" >
+       <option value="Natural Sciences">Natural Sciences</option>
+       <option value="Moody">Moody</option>
+       <option value="Liberal Arts">Liberal Arts</option>
+       <option value="Cockrell">Cockrell</option>
+       <option value="McCombs">McCombs</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Education">Education</option>
+       <option value="Nursing">Nursing</option>
+       <option value="Fine Arts">Fine Arts</option>
+       <option value="Geosciences">Geosciences</option>
+       <option value="Social Work">Social Work</option>
+       <option value="Pharmacy">Pharmacy</option>
+       <option value="Law">Law</option>
+       <option value="LBJ">LBJ</option>
+       <option value="Undergraduate Studies">Undergraduate Studies</option>
+      </select>
+  <!--  <button id="submit">Submit</button> !-->
+    </div>
+  </form>
+
+  <div id="results" class="result">
+    <div id="Nursing" class="result">
+      <h3>Nursing</h3>
+        <p><span style="color: #56a656">Right!</span> The School of Nursing has the <strong>highest</strong> percentage of in-person classes, <strong>50.46%</strong>, out of all the colleges at UT.</p>
+        <p><strong>35.78% </strong> of courses in the School of Nursing are hybrid or blended and <strong>13.76%</strong> of them are online-only.</p>
+    </div>
+    <div id="Pharmacy" class="result">
+      <h3>Pharmacy</h3>
+        <p><span style="color: #ded643">Close!</span> The College of Pharmacy has the <strong>second-highest</strong> share, <strong>47.76%</strong> of in-person classes behind the School of Nursing.</p>
+        <p><strong>44.08%</strong> of courses in the College of Pharmacy are hybrid or blended and <strong>7.76%</strong> of them are online-only.</p>
+    </div>
+    <div id="Geosciences" class="result">
+      <h3>Geosciences</h3>
+        <p><span style="color: #ded643">Close!</span> The Jackson School of Geosciences (JSG) has the <strong>third-highest</strong> share, <strong>34.19%</strong>, of in-person classes, ranked behind the School of Nursing and the College of Pharmacy.</p>
+        <p><strong>24.78%</strong> of JSG courses are hybrid or blended, while <strong>40.36%</strong> of them are online-only.</p>
+    </div>
+    <div id="Education" class="result">
+      <h3>Education</h3>
+          <p><span style="color: #ded643">Close!</span> The College of Education has the <strong>fourth-highest</strong> share, <strong>23.38%</strong> of in-person classes, ranked behind the School of Nursing, the College of Pharmacy and the Jackson School of Geosciences.</p>
+          <p>Of the remaining instruction modes, <strong>45.90%</strong> of Education courses are hybrid or blended, while <strong>28.33%</strong> of them are online-only.</p>
+    </div>
+    <div id="LBJ" class="result">
+      <h3>LBJ School of Public Affairs</h3>
+        <p>Nope! The School of Nursing has the highest share of in-person classes of any school or college at UT.</p>
+        <p>The LBJ School of Public Affairs ranks <strong>fifth</strong>, with <strong>20.18%</strong> of their courses in-person.</p>
+        <p>Of the remaining instruction modes, <strong>14.04%</strong> are hybrid or blended, while <strong>65.79</strong> are online only.</p>
+     </div>
+     <div id="Fine_Arts" class="result">
+        <h3>Fine Arts</h3>
+          <p><span style="color:#ad3c34">Nope!</span> The College of Fine Arts's percentage of in-person classes, <strong>19.74%</strong> ranks <strong>sixth</strong> among UT's schools and colleges.</p>
+          <p>The School of Nursing has the highest percentage — <strong>50.46%</strong> of in-person classes.</p>
+          <p>Of the remaining instruction modes, <strong>19.74%</strong> of College of Fine Arts courses are hyrid or blended, while <strong>60.32%</strong> are online only.</p>
+     </div>
+     <div id="Liberal_Arts" class="result">
+        <h3>Liberal Arts</h3>
+            <p><span style="color:#ad3c34">Nope!</span> The College of Liberal Arts (COLA)'s percentage of in-person classes, <strong>15.46%</strong> ranks <strong>seventh</strong> among UT's schools and colleges.</p>
+            <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+            <p>Of the remaining instruction modes, <strong>14.34%</strong> of COLA courses are hybrid or blended and <strong>70.1%</strong> are online only.</p>
+     </div>
+     <div id="Cockrell" class="result">
+        <h3>Cockrell</h3>
+          <p><span style="color:#ad3c34">Nope!</span> The Cockrell School of Engineering's percentage of in-person classes, <strong>15.43%</strong> ranks <strong>eighth</strong> among UT's schools and colleges.</p>
+          <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+          <p>Of the remaining instruction modes, <strong>23.82%</strong> of Cockrell courses are hybrid or blended and <strong>58.35%</strong> are online only.</p>
+     </div>
+     <div id="Moody" class="result">
+        <h3>Moody</h3>
+          <p><span style="color:#ad3c34">Nope!</span> The Moody College of Communication's percentage of in-person classes, <strong>14.31%</strong>, ranks <strong>ninth</strong> of the 15 schools and colleges at UT.</p>
+          <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+          <p>Of the remaining instruction modes, <strong>19.36%</strong> of Moody's courses are hybrid or blended, while <strong>66.33%</strong> are online-only.</p>
+     </div>
+     <div id="Natural_Sciences" class="result">
+       <h3>Natural Sciences</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The College of Natural Sciences' (CNS) percentage of in-person classes, <strong>12.51%</strong>, ranks <strong>10th</strong> of the 15 schools and colleges at UT.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>29.25%</strong> of CNS' classes are hybrid or blended, while <strong>58.13%</strong> are online-only.</p>
+     </div>
+     <div id="Law" class="result">
+       <h3>Law</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The School of Law's percentage of in-person classes, <strong>9.28%</strong>, ranks <strong>11th</strong> out of 15 schools and colleges at UT.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>27.43%</strong> of Texas Law's Spring 2021 courses are hybrid or blended, while <strong>63.29%</strong> are online-only.</p>
+    </div>
+    <div id="McCombs" class="result">
+      <h3>McCombs</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The McCombs School of Business' percentage of in-person classes, <strong>8.87%</strong>, ranks <strong>12th</strong> out of 15 schools and collegs at UT.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>40.11%</strong> of McCombs' classes are hybrid or blended, while <strong>49.39%</strong> are online-only.</p>
+    </div>
+    <div id="UGS" class-"result">
+      <h3>Undergraduate Studies</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The School of Undergraduate Studies' percentage of in-person classes, <strong>6.87%</strong>, ranks <strong>13th</strong> out of 15 schools and colleges at UT.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>8.15%</strong> of UGS' courses are hybrid or blended, while <strong>84.55%</strong> are online-only.</p>
+    </div>
+    <div id="Social_Work" class="result">
+      <h3>Social Work</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The Steve Hicks School of Social Work's percentage of in-person classes, <strong>3.85%</strong>, ranks <strong>14th</strong> of 15 schools and colleges at UT.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>18.27%</strong> of Social Work's courses are hybrid or blended, while <strong>77.88%</strong> are online-only.</p>
+    </div>
+    <div id="Architecture" class="result">
+      <h3>Architecture</h3>
+        <p><span style="color:#ad3c34">Nope!</span> The School of Architecture's percentage of in-person classes, <strong>0.64%</strong>, ranks <strong>last</strong> of all UT's schools and colleges.</p>
+        <p>The School of Nursing has the highest percentage of in-person classes: <strong>50.46%</strong>.</p>
+        <p>Of the remaining instruction modes, <strong>55.59%</strong> of Architecture's classes are hybrid or blended, while <strong>43.77%</strong> are online-only.</p>
+    </div>
+  </div>
+
+<script id="conditional">
+function showChoice(Nursing, div)
+{
+   document.getElementById(Nursing).style.display = div.value == "Nursing" ? 'block' : 'none';
+}
+
+</script>
+
+  <script id="data">
+ var  data = [
+   {college: "Nursing", value: 50.46, rank: 1},
+   {college: "Pharmacy", value: 47.76, rank: 2},
+   {college: "Geosciences", value: 34.194, rank: 3},
+   {college: "Education", value: 23.38, rank: 4},
+   {college: "LBJ", value: 20.18, rank: 5},
+   {college: "Fine Arts", value: 19.74, rank: 6},
+   {college: "Liberal Arts", value: 15.46, rank: 7},
+   {college: "Cockrell", value: 15.43, rank: 8},
+   {college: "Moody", value: 14.31, rank: 9},
+   {college: "Natural Sciences", value: 12.51, rank: 10},
+   {college: "Law", value: 9.28, rank: 11},
+   {college: "McCombs", value: 8.87, rank: 12},
+   {college: "Undergraduate Studies", value: 6.87, rank: 13},
+   {college: "Social Work", value: 3.85, rank: 14},
+   {college: "Architecture", value: 0.64, rank: 15},
+ ];
+
+ </script>
+</body>

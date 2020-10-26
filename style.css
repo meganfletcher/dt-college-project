@@ -1,0 +1,86 @@
+h1, h2, form, button {
+  font-family: sans-serif;
+}
+
+h3, p {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+#Nursing {
+  display: none;
+}
+
+#Pharmacy {
+  display: none;
+}
+
+#Geosciences {
+  display: none;
+}
+
+#Education {
+  display: none;
+}
+
+#LBJ {
+  display: none;
+}
+
+#Fine_Arts {
+  display: none;
+}
+
+#Liberal_Arts {
+  display: none;
+}
+
+#Cockrell  {
+  display: none;
+}
+
+#Moody {
+  display: none;
+}
+
+#Natural_Sciences {
+  display: none;
+}
+
+#Law {
+  display: none;
+}
+
+#McCombs {
+  display: none;
+}
+
+#UGS {
+  display: none;
+}
+
+#Architecture {
+  display: none;
+}
+
+#Social_Work {
+  display: none;
+}
+
+#drop {
+  padding: 3px;
+  padding-right: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/*
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+*/
