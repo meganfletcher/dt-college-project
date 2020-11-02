@@ -1,72 +1,51 @@
-h1, h2, form, button {
-  font-family: sans-serif;
-}
-
-h3, p {
-  font-family: Arial, sans-serif;
+* {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
 h2 {
-  font-weight: 400;
+    margin-top: 2.5em;
+    font-size: 1.25em;
 }
 
-#Nursing {
+h3, p {
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+}
+
+h4 {
+    font-size: .75em;
+    font-weight: 100;
+    margin-bottom: 2.5em;
+}
+
+.result {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgb(247, 247, 247);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#showOne, #showTwo, #showThree {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+#Nursing, #Pharmacy, #Geosciences, #Education, #LBJ, #Fine_Arts, #Liberal_Arts, #Cockrell, #Moody, #Natural_Sciences, #Law,
+#McCombs, #UGS, #Architecture, #Social_Work, #NursingHyb, #PharmacyHyb, #GeosciencesHyb, #EducationHyb, #LBJHyb, #Fine_ArtsHyb, 
+#Liberal_ArtsHyb, #CockrellHyb, #MoodyHyb, #Natural_SciencesHyb, #LawHyb, #McCombsHyb, #UGSHyb, #ArchitectureHyb, #Social_WorkHyb,
+#NursingOnl, #PharmacyOnl, #GeosciencesOnl, #EducationOnl, #LBJOnl, #Fine_ArtsOnl, #Liberal_ArtsOnl, #CockrellOnl, #MoodyOnl, 
+#Natural_SciencesOnl, #LawOnl, #McCombsOnl, #UGSOnl, #ArchitectureOnl, #Social_WorkOnl  {
   display: none;
 }
 
-#Pharmacy {
-  display: none;
-}
-
-#Geosciences {
-  display: none;
-}
-
-#Education {
-  display: none;
-}
-
-#LBJ {
-  display: none;
-}
-
-#Fine_Arts {
-  display: none;
-}
-
-#Liberal_Arts {
-  display: none;
-}
-
-#Cockrell  {
-  display: none;
-}
-
-#Moody {
-  display: none;
-}
-
-#Natural_Sciences {
-  display: none;
-}
-
-#Law {
-  display: none;
-}
-
-#McCombs {
-  display: none;
-}
-
-#UGS {
-  display: none;
-}
-
-#Architecture {
-  display: none;
-}
-
-#Social_Work {
+.dNone {
   display: none;
 }
 
@@ -74,13 +53,91 @@ h2 {
   padding: 3px;
   padding-right: 20px;
   font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5em;
 }
 
-/*
-button {
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 5px;
-}
-*/
+/* BUTTONS */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+  }
+
+  .controls label {
+    background: #fff;
+    border: 1px solid rgb(234, 232, 232);
+    color: #303030;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 15px;
+  }
+  .controls label:first-of-type {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .controls label:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .controls input {
+    opacity: 0;
+    position: absolute;
+    left: -1000px;
+    clip: inset(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+  }
+
+  /* Hover Colors */
+  .controls input:hover + label.label-face_to_face,
+  .controls input:focus + label.label-face_to_face {
+    z-index: 999;
+    cursor: pointer;
+    background: #f5842eb2;
+    border: 1px solid #f5842eb2;
+    color: #fff;
+  }
+  .controls input:hover + label.label-hybrid,
+  .controls input:focus + label.label-hybrid {
+    z-index: 999;
+    cursor: pointer;
+    background: #0066539f;
+    border: 1px solid #0066539f;
+    color: #fff;
+  }
+  .controls input:hover + label.label-online,
+  .controls input:focus + label.label-online {
+    z-index: 999;
+    cursor: pointer;
+    background: #2a5e8ca0;
+    border: 1px solid #2a5e8ca0;
+    color: #fff;
+  }
+
+  /* Checked Colors */
+  .controls input:checked + label.label-face_to_face {
+    color: #FFF;
+    background-color: #f5842e;
+    border-color: #f5842e;
+  }
+  .controls input:checked + label.label-hybrid {
+    color: #FFF;
+    background-color: #006654;
+    border-color: #006654;
+  }
+  .controls input:checked + label.label-online {
+    color: #FFF;
+    background-color: #2a5e8c;
+    border-color: #2a5e8c;
+  }
