@@ -60,3 +60,7 @@
         .attr('width', d => xScale(d.value))
         .attr('height', yScale.bandwidth())
         .attr("fill", "#f5842eb2");
+
+
+
+
