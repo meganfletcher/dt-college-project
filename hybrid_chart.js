@@ -60,3 +60,4 @@ var hybrid_data = [
         .attr('width', d => xScale2(d.value))
         .attr('height', yScale2.bandwidth())
         .attr("fill", "#0066539f");
+

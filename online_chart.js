@@ -60,3 +60,4 @@ var online_data = [
         .attr('width', d => xScale3(d.value))
         .attr('height', yScale3.bandwidth())
         .attr("fill", "#2a5e8ca0");
+

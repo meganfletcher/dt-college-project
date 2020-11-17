@@ -19,9 +19,14 @@ h4 {
     margin-bottom: 2.5em;
 }
 
+#guess {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
 .result {
     padding: 1em;
-    margin: 1em;
+    margin: 5em;
     background-color: rgb(247, 247, 247);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -38,9 +43,9 @@ h4 {
 }
 
 #Nursing, #Pharmacy, #Geosciences, #Education, #LBJ, #Fine_Arts, #Liberal_Arts, #Cockrell, #Moody, #Natural_Sciences, #Law,
-#McCombs, #UGS, #Architecture, #Social_Work, #NursingHyb, #PharmacyHyb, #GeosciencesHyb, #EducationHyb, #LBJHyb, #Fine_ArtsHyb, 
+#McCombs, #UGS, #Architecture, #Social_Work, #NursingHyb, #PharmacyHyb, #GeosciencesHyb, #EducationHyb, #LBJHyb, #Fine_ArtsHyb,
 #Liberal_ArtsHyb, #CockrellHyb, #MoodyHyb, #Natural_SciencesHyb, #LawHyb, #McCombsHyb, #UGSHyb, #ArchitectureHyb, #Social_WorkHyb,
-#NursingOnl, #PharmacyOnl, #GeosciencesOnl, #EducationOnl, #LBJOnl, #Fine_ArtsOnl, #Liberal_ArtsOnl, #CockrellOnl, #MoodyOnl, 
+#NursingOnl, #PharmacyOnl, #GeosciencesOnl, #EducationOnl, #LBJOnl, #Fine_ArtsOnl, #Liberal_ArtsOnl, #CockrellOnl, #MoodyOnl,
 #Natural_SciencesOnl, #LawOnl, #McCombsOnl, #UGSOnl, #ArchitectureOnl, #Social_WorkOnl  {
   display: none;
 }
@@ -140,4 +145,13 @@ h4 {
     color: #FFF;
     background-color: #2a5e8c;
     border-color: #2a5e8c;
+  }
+
+
+  /* @media for smaller title text on mobile */
+
+  @media only screen and (max-width: 600px) {
+    #title {
+      font-size: 1.5em;
+    }
   }

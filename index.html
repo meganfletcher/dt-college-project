@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!--<link href="/Users/meganfletcher/Desktop/codepen/src/style.css" type="text/css" rel="stylesheet" />-->
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <header>
-    <h1>UT Austin's Spring 2021 class format by college</h1>
+    <h1 id="title">Which UT-Austin colleges have the <br>highest percentages of each course format?</h1>
+    <h3 id="guess">We want you to guess.</h3>
 </header>
 <body>
     <h4>By Megan Fletcher and Christina Peebles</h4>
@@ -14,18 +15,18 @@
     <!-- BUTTON -->
     <form id="whatformat" action=" " method="POST">
         <div class="controls" id="toggle-button" aria-hidden="true">
-    
+
             <input type="radio" name="chart-mode" value="One" id="face_to_face" checked>
             <label for="face_to_face" class="label-face_to_face">Face-to-face</label>
-            
+
             <input type="radio" name="chart-mode" value="Two" id="hybrid" >
             <label for="hybrid" class="label-hybrid">Hybrid</label>
 
             <input type="radio" name="chart-mode" value="Three" id="online" >
             <label for="online" class="label-online">Online</label>
-        
+
         </div>
-    </form> 
+    </form>
 
 
     <!-- QUESTIONS -->
@@ -106,15 +107,15 @@
         </div>
         <div id="Pharmacy" class="result">
         <h3>Pharmacy</h3>
-            <p><span style="color: #ded643">Close!</span> The College of Pharmacy has the <strong>second-highest</strong> share, <strong>47.76%</strong>, of in-person classes behind the School of Nursing.</p>
+            <p><span style="color: #A08827">Close!</span> The College of Pharmacy has the <strong>second-highest</strong> share, <strong>47.76%</strong>, of in-person classes behind the School of Nursing.</p>
         </div>
         <div id="Geosciences" class="result">
         <h3>Geosciences</h3>
-            <p><span style="color: #ded643">Close!</span> The Jackson School of Geosciences has the <strong>third-highest</strong> share, <strong>34.19%</strong>, of in-person classes, ranked behind the School of Nursing and the College of Pharmacy.</p>
+            <p><span style="color: #A08827">Close!</span> The Jackson School of Geosciences has the <strong>third-highest</strong> share, <strong>34.19%</strong>, of in-person classes, ranked behind the School of Nursing and the College of Pharmacy.</p>
         </div>
         <div id="Education" class="result">
         <h3>Education</h3>
-            <p><span style="color: #ded643">Close!</span> The College of Education has the <strong>fourth-highest</strong> share, <strong>23.38%</strong>, of in-person classes, ranked behind the School of Nursing, the College of Pharmacy and the Jackson School of Geosciences.</p>
+            <p><span style="color: #A08827">Close!</span> The College of Education has the <strong>fourth-highest</strong> share, <strong>23.38%</strong>, of in-person classes, ranked behind the School of Nursing, the College of Pharmacy and the Jackson School of Geosciences.</p>
         </div>
         <div id="LBJ" class="result">
         <h3>LBJ School of Public Affairs</h3>
@@ -182,15 +183,15 @@
             </div>
             <div id="EducationHyb" class="result">
                 <h3>Education</h3>
-                <p><span style="color: #ded643">Close!</span> The College of Education has the <strong>second-highest</strong> share, <strong>45.90%</strong>, of hybrid or blended classes, ranked behind the School of Architecture.</p>
+                <p><span style="color: #A08827">Close!</span> The College of Education has the <strong>second-highest</strong> share, <strong>45.90%</strong>, of hybrid or blended classes, ranked behind the School of Architecture.</p>
             </div>
             <div id="PharmacyHyb" class="result">
                 <h3>Pharmacy</h3>
-                <p><span style="color: #ded643">Close!</span> The College of Pharmacy has the <strong>third-highest</strong> share, <strong>44.08%</strong>, of hybrid or blended classes, ranked behind the School of Architecture and the College of Education.</p>
+                <p><span style="color: #A08827">Close!</span> The College of Pharmacy has the <strong>third-highest</strong> share, <strong>44.08%</strong>, of hybrid or blended classes, ranked behind the School of Architecture and the College of Education.</p>
             </div>
             <div id="McCombsHyb" class="result">
                 <h3>McCombs</h3>
-                <p><span style="color: #ded643">Close!</span> The McCombs School of Business has the <strong>fourth-highest</strong> share, <strong>40.11%</strong>, of hybrid or blended classes, ranked behind the School of Architecture, College of Education and College of Pharmacy.</p>
+                <p><span style="color: #A08827">Close!</span> The McCombs School of Business has the <strong>fourth-highest</strong> share, <strong>40.11%</strong>, of hybrid or blended classes, ranked behind the School of Architecture, College of Education and College of Pharmacy.</p>
             </div>
             <div id="NursingHyb" class="result">
             <h3>Nursing</h3>
@@ -258,15 +259,15 @@
             </div>
             <div id="Social_WorkOnl" class="result">
                 <h3>Social Work</h3>
-                <p><span style="color: #ded643">Close!</span> The Steve Hicks School of Social Work has the <strong>second-highest</strong> share, <strong>77.88%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies.</p>
+                <p><span style="color: #A08827">Close!</span> The Steve Hicks School of Social Work has the <strong>second-highest</strong> share, <strong>77.88%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies.</p>
             </div>
             <div id="Liberal_ArtsOnl" class="result">
                 <h3>Liberal Arts</h3>
-                <p><span style="color: #ded643">Close!</span> The College of Liberal Arts has the <strong>third-highest</strong> share, <strong>70.11%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies and the Steve Hicks School of Social Work.</p>
+                <p><span style="color: #A08827">Close!</span> The College of Liberal Arts has the <strong>third-highest</strong> share, <strong>70.11%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies and the Steve Hicks School of Social Work.</p>
             </div>
             <div id="MoodyOnl" class="result">
                 <h3>Moody</h3>
-                <p><span style="color: #ded643">Close!</span> The Moody College of Communication has the <strong>fourth-highest</strong> share, <strong>66.33%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies, Steve Hicks School of Social Work and College of Liberal Arts.</p>
+                <p><span style="color: #A08827">Close!</span> The Moody College of Communication has the <strong>fourth-highest</strong> share, <strong>66.33%</strong>, of online-only classes, ranked behind the School of Undergraduate Studies, Steve Hicks School of Social Work and College of Liberal Arts.</p>
             </div>
             <div id="LBJOnl" class="result">
                 <h3>LBJ School of Public Affairs</h3>
@@ -324,23 +325,23 @@
                 <p>The School of Undergraduate Studies has the highest percentage of online-only classes: <strong>84.55%</strong>.</p>
             </div>
         </div>
-    
+
     <!-- face-to-face chart -->
     <div id="f2f_chart_title" class="dNone">
         <h2>Percentage of Spring 2021 In-Person Classes by College</h2>
-        <script src="f2f_chart.js"></script>
+        <script src="./f2f_chart.js"></script>
     </div>
 
     <!-- hybrid chart -->
     <div id="hyb_chart_title" class="dNone">
         <h2>Percentage of Spring 2021 Hybrid Classes by College</h2>
-        <script src="hybrid_chart.js"></script>
+        <script src="./hybrid_chart.js"></script>
     </div>
 
     <!-- online chart -->
     <div id="onl_chart_title" class="dNone">
         <h2>Percentage of Spring 2021 Online Classes by College</h2>
-        <script src="online_chart.js"></script>
+        <script src="./online_chart.js"></script>
     </div>
 
     <!-- BUTTON CLICKS -->
@@ -478,7 +479,7 @@
 
         // Refreshes dropdown on refresh of page
         select_box = document.getElementById("dropF2F");
-        select_box.selectedIndex = -1;  
+        select_box.selectedIndex = -1;
 
         function showChoiceHyb(div){
             var getSelectValue = document.getElementById("dropH").value;
@@ -488,7 +489,7 @@
 
         // Refreshes dropdown on refresh of page
         select_box = document.getElementById("dropH");
-        select_box.selectedIndex = -1;  
+        select_box.selectedIndex = -1;
 
         function showChoiceOnl(div){
             var getSelectValue = document.getElementById("dropO").value;
@@ -498,7 +499,7 @@
 
         // Refreshes dropdown on refresh of page
         select_box = document.getElementById("dropO");
-        select_box.selectedIndex = -1;  
+        select_box.selectedIndex = -1;
 
         // if click on an option in f2f_drop
         var i;
@@ -508,7 +509,7 @@
                 f2f_chartTitle.classList.remove("dNone")
                 f2fChart.classList.remove("dNone");
             } });} ;
-        
+
         // if click on an option in hyb_drop
         for (i = 0; i < hyb_drop.length; i++) {
             hyb_drop[i].addEventListener('click', function() {
@@ -524,5 +525,8 @@
                 onl_chartTitle.classList.remove("dNone")
                 onlChart.classList.remove("dNone");
             } });} ;
+
+        // f2f d3
+
     </script>
 </body>
